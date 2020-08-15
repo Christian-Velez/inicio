@@ -1,0 +1,233 @@
+:root{
+    --gris:rgb(87,86,91);
+    --gris-claro:#E6E6E6;
+}
+body{
+    background-color:white;
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+p{
+    margin-top: 1em;
+    color:white;
+    font-family:'Roboto', sans-serif;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+
+
+/*#region Header bar*/
+.menu-fixed{
+    position: fixed ;
+    z-index: 1000;
+    top:0;
+}
+header{
+    background-color:#1b1f23;
+    width:100%;
+    padding:0;
+}
+
+    header nav ul{
+        list-style:none;
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+
+        header nav ul li{
+            float:left;
+        }
+            header nav ul li a{
+                display: block;
+                color:#fff;
+                text-decoration:none;
+            }
+/*#endregion Header bar*/
+
+
+/*#region Header body*/
+.Fondo1{
+background-color:#1b1f23;
+}
+    .Msg{
+        width: 100%;
+        text-align: center;
+        padding-top: 8%;
+    }
+        .Msg>img{
+            
+            width: 70%;
+        }
+
+    .Fondo1 h1{
+        font-size: 150%;
+        color:white;
+        text-align: left;
+        font-family:Helvetica;
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        margin-top: 0;
+    }
+        .Fondo1 h1:hover{
+            color:#959da5;
+        }
+    .Fondo1 h2{
+        color: white;
+        font-size: 400%;
+        font-family: 'Roboto', sans-serif;
+        margin-bottom: 0;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+/*#endregion Header body*/
+
+
+/*#region Body*/
+.Cuerpo{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+    .Izq{
+        width: 80% ;
+        box-sizing: border-box;
+    }
+    .Der{
+        width: 20%;
+        margin-top:8%;
+        margin-bottom: 4%;
+
+    }
+
+.Content{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+
+    padding-bottom: 10%;
+    -webkit-box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 10px 26px 0px rgba(0,0,0,0.6);
+
+}
+    .Content img{
+        transition: transform .2s;
+        border: groove;
+        background-color:var(--gris-claro);
+        width: 24%;
+    }
+        .Content img:hover{
+            transform: scale(1.1); 
+            opacity: 0.3;
+        }
+
+
+.Latizq{
+    margin-left:8.5%;
+    margin-top:5%;
+    margin-right: 0;
+}
+
+.Middle{
+    margin-top:5%;
+    margin-left:4.5%;
+    margin-right: 4.5%;
+}
+.Latder{
+    margin-right: 7.5%;
+    margin-top:5%;
+}
+iframe{
+    width: 90%;
+    height: 100%;
+}
+/*#endregion Body*/
+
+
+/*#region Footer*/
+footer{
+    padding-top:3%;
+    background-color: #1b1f23;
+    margin-top: 10%;
+    text-align:center;
+}
+    .foot{
+        margin: 0;
+        padding: 0;
+        font-family: 'Libre Barcode 39', cursive;
+        color: white;
+        font-size:5em;
+    }
+/*#endregion footer*/
+
+
+/*#region Media-Queries*/
+@media screen and (max-width:1350px){
+    .Fondo1 h2{
+        font-size: 300%;
+    }
+    .Izq{
+        width: 100%;
+    }
+        .Content{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        }
+            .Content img{
+                width: 24%;
+            }
+
+    .Der{
+        width: 0;
+    }
+
+}
+
+@media screen and (max-width:784px){
+    .Fondo1 h1{
+        font-size: 110%;
+    }
+    .Latder,.Latizq,.Middle{
+        margin-left:5.2%;
+        margin-right: 5%;
+    }
+    .Content img{
+        width: 38%;
+    }
+}
+
+
+@media screen and (max-width:650px){
+    .foot{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:520px){
+    .foot{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width:400px){
+    .foot{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:395px){
+
+    .Latder,.Latizq,.Middle{
+        margin-left:4.3%;
+        margin-right: 3%;
+    }
+    .Content img{
+        width: 40%;
+    }
+}
+/*#endregion Media-Queries*/
